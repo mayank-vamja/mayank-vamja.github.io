@@ -1,0 +1,107 @@
+body {
+	background: #232323;
+	margin: 0;
+	font-family: "Avenir";
+}
+
+#header {
+	width: 100%;
+	margin: 0;
+	padding: 15px 0;
+	background-color: #2196F3;
+	text-transform: uppercase;
+}
+
+#bar {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: white;
+	text-align: center;	
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+#msg {
+	font-size: large;
+	display: inline-block;
+	min-width: 20%;
+	vertical-align: all;
+}
+
+button {
+	font-size: large;
+	border: none;
+	height: 100%;
+	background: none;
+	color: #2196F3;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+button:hover {
+	background: #2196F3;
+	color: white;
+	transition: all 0.3s;
+}
+
+.selected {
+	background-color: #2196F3;
+	color: white;
+}
+
+#newgame: hover {
+	color: white;
+	background-color: #2196F3;
+}
+
+h1 {
+	font-size: x-large;
+	padding: 0;
+	margin: 0;
+	font-style: bold;
+	color: white;
+	text-align: center;
+}
+
+#rand_color {
+	font-size: xx-large;
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	margin: 0 auto;
+}
+
+.square {
+	background-color: #009688;
+	width: 30%;
+	float: left;
+	padding-bottom: 30%;
+	margin: 1.66%;
+	border-radius: 10%;
+	transition: background 0.5s;
+}
+
+@media only screen and (min-width: 1280px) {
+    #container {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	#bar {
+	}
+	#msg {
+		font-size: larger;
+	}
+	button {
+		font-size: larger;
+	}
+	h1 {
+		font-size: x-large;
+	}
+	#rand_color {
+		font-size: xx-large;
+	}
+} 
