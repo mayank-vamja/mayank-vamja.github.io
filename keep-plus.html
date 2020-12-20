@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Primary Meta Tags -->
+  <title>Keep +</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="canonical" href="https://themesberg.com/product/ui-kits/neumorphism-ui/" />
+  <link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link type="text/css" href="./css/neumorphism.css" rel="stylesheet">
+
+  <style>
+    .text-secondary,
+    .text-info {
+      color: #aa00ff !important;
+    }
+
+    .text-success {
+      color: #00c853 !important;
+    }
+
+    .text-danger {
+      color: #ff1744 !important;
+    }
+
+    .card-hoverable:hover {
+      box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
+    }
+
+    div#Carousel3 {
+      position: relative;
+      margin-bottom: 110px;
+    }
+
+    div#Carousel3::before {
+      content: "";
+      height: 100px;
+      width: calc(100% + 0px);
+      bottom: -103px;
+      position: absolute;
+      left: 25px;
+      transform: skewX(25deg);
+      background: #d7d9d0;
+      box-shadow: 4px 4px 4px 0 #c8c9ce;
+      border-radius: 0.55rem;
+    }
+
+    div#Carousel3::after {
+      content: "";
+      height: 100px;
+      width: calc(100% + 0px);
+      bottom: -103px;
+      position: absolute;
+      left: -25px;
+      transform: skewX(-25deg);
+      background: #d7d9d0;
+      border-radius: 0.55rem;
+      box-shadow: -4px 4px 4px 0 #c8c9ce;
+    }
+
+
+    .notch {
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      width: 150px;
+      height: 30px;
+      background-color: #606070;
+      border-radius: 0 0 10px 10px;
+      transform: translateX(-50%);
+      z-index: 50;
+    }
+
+    .notch::before,
+    .notch::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -7px;
+      width: 14px;
+      height: 7px;
+      background-size: 50% 100%;
+      background-repeat: no-repeat;
+      background-image: radial-gradient(circle at 0 100%,
+          transparent 6px,
+          #606070 7px);
+    }
+
+    .notch::after {
+      left: 100%;
+      margin-right: corner-sizepx;
+      background-image: radial-gradient(circle at 100% 100%,
+          transparent 6px,
+          #606070 7px);
+    }
+
+
+    .area {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+
+    }
+
+    .circles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .circles li {
+      position: absolute;
+      display: block;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
+      border-radius: 50% !important;
+      animation: animate 25s linear infinite;
+      bottom: -150px;
+    }
+
+    .circles li div {
+      margin: 10%;
+      width: 80%;
+      height: 80%;
+      border-radius: inherit;
+      box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF !important;
+    }
+
+    .circles li:nth-child(1) {
+      left: 25%;
+      width: 80px;
+      height: 80px;
+      animation-delay: 0s;
+    }
+
+
+    .circles li:nth-child(2) {
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 2s;
+      animation-duration: 12s;
+    }
+
+    .circles li:nth-child(3) {
+      left: 70%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 4s;
+    }
+
+    .circles li:nth-child(4) {
+      left: 40%;
+      width: 60px;
+      height: 60px;
+      animation-delay: 0s;
+      animation-duration: 18s;
+    }
+
+    .circles li:nth-child(5) {
+      left: 65%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 0s;
+    }
+
+    .circles li:nth-child(6) {
+      left: 75%;
+      width: 110px;
+      height: 110px;
+      animation-delay: 3s;
+    }
+
+    .circles li:nth-child(7) {
+      left: 35%;
+      width: 150px;
+      height: 150px;
+      animation-delay: 7s;
+    }
+
+    .circles li:nth-child(8) {
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      animation-delay: 15s;
+      animation-duration: 45s;
+    }
+
+    .circles li:nth-child(9) {
+      left: 20%;
+      width: 15px;
+      height: 15px;
+      animation-delay: 2s;
+      animation-duration: 35s;
+    }
+
+    .circles li:nth-child(10) {
+      left: 85%;
+      width: 150px;
+      height: 150px;
+      animation-delay: 0s;
+      animation-duration: 11s;
+    }
+
+
+
+    @keyframes animate {
+
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-1000px) rotate(1080deg);
+        opacity: 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-global">
+    <nav id="navbar-main" aria-label="Primary navigation"
+      class="border-bottom border-light navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+      <div class="container position-relative">
+        <a class="navbar-brand mr-lg-4" href="#">
+          <h2 class="navbar-brand-dark rounded shadow-inset py-1 px-3 m-0 text-secondary" style="font-weight: 900;">
+            <img style="vertical-align: initial;" src="./assets/img/svg/notes.svg" height="30" width="30">
+            <!-- ＫＥＥＰ＋ -->
+          </h2>
+          <h2 class="navbar-brand-light rounded border border-light m-0 text-secondary" style="font-weight: 900;">
+            ＫＥＥＰ＋
+          </h2>
+        </a>
+        <div class="navbar-collapse collapse" style="top: 80px !important;" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="#" class="navbar-brand shadow-inset py-1 px-3 rounded border border-light">
+                  <h2 class="navbar-brand-light m-0 text-secondary" style="font-weight: 900;">
+                    <img style="vertical-align: initial;" src="./assets/img/svg/notes.svg" height="30" width="30">
+                  </h2>
+                  <h2 class="navbar-brand-dark m-0 text-secondary" style="font-weight: 900;">
+                    <img style="vertical-align: initial;" src="./assets/img/svg/notes.svg" height="30" width="30">
+                  </h2>
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global"
+                  aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="navbarAction('#download')">Download</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="navbarAction('#features')">Features</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="navbarAction('#screenshots')">Screenshots</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global"
+            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="top-main" class="section pt-6">
+      <div class="container">
+        <div class="row align-items-center flex-wrap-reverse">
+          <div class="col-md-5 pt-5">
+            <div class="top-logo-text" id="download">
+              <h1 class="text-primary"
+                style="font-weight: 900; letter-spacing: 5px; font-size: 60px; font-family: fantasy; text-shadow: 4px 4px 8px #b8b9be, -4px -4px 8px #FFFFFF;">
+                <img style="vertical-align: initial;" src="./assets/img/svg/notes.svg" height="60" width="60">
+                KEEP+
+              </h1>
+            </div>
+
+            <p class="mb-4">
+              <i>Notes and To-Do taking made easy.</i>
+            </p>
+            <div>
+              <h4>Download Keep plus v1.0</h4>
+              <a href="./assets/others/keep-plus-v1.apk" download="keep-plus-v1.apk"
+                class="btn btn-pill btn-lg btn-primary mb-3 mr-3 text-success" type="button">
+                <span class="mr-1"><span class="fab fa-google-play"></span></span>
+                Android (arm64 - apk)
+              </a>
+              <a href="./assets/others/keep-plus-v1.deb" download="keep-plus-v1.deb"
+                class="btn btn-pill btn-lg btn-primary mb-3 mr-3 text-danger" type="button">
+                <span class="mr-1"><span class="fab fa-linux"></span></span>
+                Linux (x64 - deb)
+              </a>
+              <a href="./assets/others/keep-plus-v1.exe" download="keep-plus-v1.exe"
+                class="btn btn-pill btn-lg btn-primary mb-3 mr-3 text-secondary" type="button">
+                <span class="mr-1"><span class="fab fa-windows"></span></span>
+                Windows (x64 - exe)
+              </a>
+
+              <!-- <a class="btn btn-pill btn-sm btn-primary mb-3 mr-3 text-gray" type="button">
+                <span class="mr-1"><span class="fab fa-apple"></span></span>
+                macOs (row - zip)
+              </a> -->
+            </div>
+          </div>
+          <div class="col-12 col-md-7 mt-4 mt-md-0 text-center">
+            <img id="top-img-promo" class="" style="max-height: calc(100vh - 100px);"
+              src="./assets/img/keep-plus/bg.png" alt="illustration">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0" id="features">
+      <div class="container">
+        <div>
+          <h1 class="text-center text-secondary mb-5">
+            <span class="p-3 shadow-soft" style="border-radius:50% 50% 50% 50% / 84% 16% 84% 16% ;">
+              <span class="shadow-inset py-2 px-5"
+                style="border-radius:50% 50% 50% 50% / 84% 16% 84% 16% ;">Features</span>
+            </span>
+          </h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="card bg-primary shadow-soft border-light px-4 py-1 mb-5">
+              <div class="card-body text-center text-md-left">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h2 class="mb-3 text-gray">Take Notes</h2>
+                    <p class="mb-4">
+                      Ypu can take notes anywhere anytime. <br /> You willget autosave, mark as important, colors like
+                      many more functionalities.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                    <img style="max-height: 200px;" src="./assets/img/svg/notes_taking.svg" alt="illustration">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-10">
+            <div class="card bg-primary shadow-soft border-light px-4 py-1 mb-5">
+              <div class="card-body text-center text-md-left">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h2 class="mb-3 text-gray">To-Do list</h2>
+                    <p class="mb-4">
+                      You can add todo list to your note to have a To-Do list like feature. <br />
+                      To-Do list is featured with re-order, swipe-to delete like capabilities.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                    <img style="max-height: 200px;" src="./assets/img/svg/todo_list.svg" alt="illustration">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-10">
+            <div class="card bg-primary shadow-soft border-light px-4 py-1 mb-5">
+              <div class="card-body text-center text-md-left">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h2 class="mb-3 text-gray">Themes</h2>
+                    <p class="mb-4">
+                      Kepp+ have Light and Dark two theme modes.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                    <img style="max-height: 200px;" src="./assets/img/svg/themes.svg" alt="illustration">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-10">
+            <div class="card bg-primary shadow-soft border-light px-4 py-1 mb-5">
+              <div class="card-body text-center text-md-left">
+                <div class="row align-items-center">
+                  <div class="col-md-6">
+                    <h2 class="mb-3 text-gray">Easy signup-login</h2>
+                    <p class="mb-4">
+                      It's easy to synchronize your notes by creating a free account and login to that account.<br />
+                      You can easily sync your notes in all devices by creating account.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right">
+                    <img style="max-height: 200px;" src="./assets/img/svg/sign_in_placeholder.svg" alt="illustration">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-lg pt-0" id="screenshots">
+      <div class="container">
+        <h1 class="text-center text-secondary mb-5">
+          <span class="p-3 shadow-soft" style="border-radius:50% 50% 50% 50% / 84% 16% 84% 16% ;">
+            <span class="shadow-inset py-2 px-5" style="border-radius:50% 50% 50% 50% / 84% 16% 84% 16% ;">Screenshots
+            </span>
+          </span>
+        </h1>
+        <div class="row justify-content-center px-3">
+          <div class="col-lg-8 col-md-10">
+            <!-- Carousel -->
+            <div id="Carousel3"
+              class="carousel slide shadow-inset border border-light p-4 rounded d-none d-md-block d-lg-block d-xl-block"
+              style="margin-bottom: 130px; background-color: #fffdd0;" data-ride="carousel">
+              <div class="desktop-cam shadow-inset text-gray text-center"
+                style="line-height: 16px; background: #fff; position: absolute;top: 4px;left: calc(50% - 10px);width: 16px;height: 16px;border-radius: 8px;">
+                •
+              </div>
+              <ol class="carousel-indicators" style="position: absolute; bottom: -60px;">
+                <li data-target="#Carousel3" data-slide-to="0" class="active"></li>
+                <li data-target="#Carousel3" data-slide-to="1" class=""></li>
+                <li data-target="#Carousel3" data-slide-to="2" class=""></li>
+                <li data-target="#Carousel3" data-slide-to="3" class=""></li>
+                <li data-target="#Carousel3" data-slide-to="4" class=""></li>
+                <li data-target="#Carousel3" data-slide-to="5" class=""></li>
+                <li data-target="#Carousel3" data-slide-to="6" class=""></li>
+                <li data-target="#Carousel3" data-slide-to="7" class=""></li>
+              </ol>
+              <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/1.png" alt="ss1">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/2.png" alt="ss2">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/3.png" alt="ss3">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/4.png" alt="ss4">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/5.png" alt="ss5">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/6.png" alt="ss6">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/7.png" alt="ss7">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/desktop/8.png" alt="ss8">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#Carousel3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#Carousel3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!-- End of Carousel -->
+
+            <div id="Carousel4" class="carousel slide shadow-soft d-md-none d-sm-block" data-ride="carousel"
+              style="margin-bottom: 100px; max-width: 360px; min-width: 270px; border-radius: 30px; background: #606070; padding: 8px; z-index: 10;">
+              <div class="desktop-cam shadow-inset text-gray text-center"
+                style="z-index: 60; line-height: 16px; background: #aaa; position: absolute;top: 12px;left: calc(50% - 50px);width: 16px;height: 16px;border-radius: 8px;">
+                •
+              </div>
+              <div class="desktop-cam shadow-inset text-gray text-center"
+                style="z-index: 60; line-height: 16px; background: #aaa; position: absolute;top: 12px;left: calc(50% - 20px);width: 16px;height: 16px;border-radius: 8px;">
+                •
+              </div>
+              <div class="desktop-cam text-gray text-center"
+                style="z-index: 60;  line-height: 8px; background: #eee;position: absolute;top: 16px;left: calc(50% + 16px);width: 36px;height: 8px;border-radius: 4px;">
+                •••
+              </div>
+              <div class="notch"></div>
+              <ol class="carousel-indicators" style="position: absolute; bottom: -60px;">
+                <li data-target="#Carousel4" data-slide-to="0" class="active"></li>
+                <li data-target="#Carousel4" data-slide-to="1" class=""></li>
+                <li data-target="#Carousel4" data-slide-to="2" class=""></li>
+                <li data-target="#Carousel4" data-slide-to="3" class=""></li>
+                <li data-target="#Carousel4" data-slide-to="4" class=""></li>
+                <li data-target="#Carousel4" data-slide-to="5" class=""></li>
+                <li data-target="#Carousel4" data-slide-to="6" class=""></li>
+                <li data-target="#Carousel4" data-slide-to="7" class=""></li>
+                <li data-target="#Carousel4" data-slide-to="8" class=""></li>
+              </ol>
+              <div class="carousel-inner"
+                style="z-index: 40; border-radius: 26px; padding-top: 30px; background: #fff;">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/1.png" alt="ss1">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/2.png" alt="ss2">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/3.png" alt="ss3">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/4.png" alt="ss4">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/5.png" alt="ss5">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/6.png" alt="ss6">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/7.png" alt="ss7">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/8.png" alt="ss8">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/keep-plus/mobile/9.png" alt="ss9">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#Carousel4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#Carousel4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal fade show" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="modal-1" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="h6 modal-title mb-0 text-info" id="modal-title-1">Guess The Color</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/color-game.png" class="card-img-top rounded mb-3" alt="Designer desk">
+          <p class="mb-1">A RGB color guessing game where you have to choose a color from options based on levels (easy,
+            medium, hard).</p>
+          <div class="alert alert-secondary shadow-inset m-0 text-center" role="alert">
+            <span class="badge badge-lg badge-success text-uppercase">HTML</span>
+            <span class="badge badge-lg badge-secondary text-uppercase">CSS</span>
+            <span class="badge badge-lg badge-success text-uppercase">Javascript</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="./game/color-guess/index.html" type="button"
+            class="btn btn-sm btn-pill btn-primary text-secondary">Play Game</a>
+          <button type="button" class="btn btn-pill btn-primary text-secondary text-danger ml-auto"
+            data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="d-flex pb-5 pt-6 border-top border-light bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Info</h4>
+          <div class="alert shadow-inset">
+            <div class="alert-inner--text d-flex flex-row align-self-center mb-3">
+              <span class="icon text-success"><span class="fas fa-map-marker"></span></span>
+              <h2 class="text-success m-0 ml-3">India</h2>
+            </div>
+            <a class="alert-inner--text d-flex flex-row align-self-center" href="mailto:mayankvamja@gmail.com">
+              <span class="icon text-info icon-xs"><span class="fas fa-envelope"></span></span>
+              <span class="text-info m-0 ml-3">mayankvamja@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+          <h4>Others</h4>
+          <ul class="footer-links list-unstyled mt-2">
+            <li class="mb-1"><a class="p-2" target="_blank" href="https://zomato-fy.web.app/">Zomato-fy (Find
+                restaurants)</a></li>
+            <li class="mb-1"><a class="p-2" target="_blank" href="http://newsoasis.herokuapp.com/">Newsoasis (Trending
+                News)</a></li>
+            <li class="mb-1"><a class="p-2" target="_blank" href="game/guess-color/index.html">Colour Guess (Game)</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+          <h5></h5>
+          <ul class="footer-links list-unstyled mt-2">
+            <li class="mb-3">
+              <a href="https://github.com/mayank-vamja" target="_blank" class="btn btn-pill btn-primary"
+                aria-label="github social link" data-toggle="tooltip" data-placement="top" title=""
+                data-original-title="Open source projects">
+                <span aria-hidden="true" class="fab fa-github"></span>
+                <span>Github</span>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://mayankvamja.medium.com/" target="_blank" class="btn btn-pill btn-primary"
+                aria-label="github social link" data-toggle="tooltip" data-placement="top" title=""
+                data-original-title="Follow on medium">
+                <span aria-hidden="true" class="fab fa-medium"></span>
+                <span>Medium: @mayankvamja</span>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://www.linkedin.com/in/mayank-vamja-287aa2138/" target="_blank"
+                class="btn btn-pill btn-primary" aria-label="github social link" data-toggle="tooltip"
+                data-placement="top" title="" data-original-title="Follow on medium">
+                <span aria-hidden="true" class="fab fa-linkedin"></span>
+                <span>mayank-vamja-287aa2138</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-5">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+            <p class="font-weight-normal font-small mb-0">Copyright © MVSofts
+              <span class="current-year">2020</span>. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="area">
+    <ul class="circles">
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+      <li>
+        <div></div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="fixed-bottom p-2 text-right" style="display: none;" id="download-now-btn">
+    <a href="#download" class="btn btn-pill bg-secondary text-primary" type="button">
+      <span class="mr-1"><span class="fas fa-download"></span></span>
+      Download now
+    </a>
+  </div>
+  <!-- Core -->
+  <script src=" ./vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+  <script src="./assets/js/neumorphism.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".modal").modal("hide");
+    });
+    function navbarAction(url) {
+      $('#navbar_global').collapse('hide');
+      window.location.replace(url);
+    }
+    var mybutton = document.querySelector("#download-now-btn");
+    var download = document.querySelector("#download");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      var o = download.getBoundingClientRect();
+      if (document.body.scrollTop > (o.height + o.y) || document.documentElement.scrollTop > (o.height + o.y)) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+  </script>
+</body>
+
+</html>

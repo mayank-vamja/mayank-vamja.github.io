@@ -1,345 +1,662 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Mayank Vamja</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Footer.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Primary Meta Tags -->
+  <title>Neumorphism UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="canonical" href="https://themesberg.com/product/ui-kits/neumorphism-ui/" />
+  <link type="text/css" href="./vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link type="text/css" href="./css/neumorphism.css" rel="stylesheet">
+
+  <style>
+    .card-hoverable:hover {
+      box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #ffffff !important;
+    }
+
+    .bg-secondary,
+    .bg-info {
+      background-color: #7444DF !important;
+    }
+
+    .text-secondary,
+    .text-info {
+      color: #7444DF !important;
+    }
+
+    .text-success {
+      color: #00c853 !important;
+    }
+
+    .text-danger {
+      color: #ff1744 !important;
+    }
+
+    .navbar-collapse {
+      top: 80px !important;
+      /* height: min-content !important; */
+    }
+  </style>
 </head>
 
-<body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
-        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">MV Softs</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
+<body>
+  <header class="header-global">
+    <nav id="navbar-main" aria-label="Primary navigation"
+      class="navbar navbar-main navbar-expand-lg border-bottom border-light navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+      <div class="container position-relative">
+        <a class="navbar-brand shadow-soft py-1 px-3 rounded border border-light mr-lg-4" href="./index.html">
+          <h2 class="navbar-brand-dark m-0" style="font-weight: 900;"><span class="mr-2">M</span><span>V</span></h2>
+          <h2 class="navbar-brand-light m-0" style="font-weight: 900;"><span class="mr-2">M</span><span>V</span></h2>
+        </a>
+        <div class="navbar-collapse collapse" id="navbar_global">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="./index.html" class="navbar-brand shadow-soft py-1 px-3 rounded border border-light">
+                  <h2 class="navbar-brand-dark m-0" style="font-weight: 900;"><span class="mr-2">M</span><span>V</span>
+                  </h2>
+                  <h2 class="navbar-brand-light m-0" style="font-weight: 900;"><span class="mr-2">M</span><span>V</span>
+                  </h2>
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global"
+                  aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+              </div>
             </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" data-toggle="scroll" href="#portfolio"
+                onclick="navbarAction()">Portfolio</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" data-toggle="scroll" href="#about"
+                onclick="navbarAction()">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" data-toggle="scroll" href="#contact"
+                onclick="navbarAction()">Contact</a>
+            </li>
+          </ul>
         </div>
+        <div class=" d-flex align-items-center">
+
+          <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global"
+            aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
     </nav>
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/profile.png">
-            <h1>Mayank Vamja</h1>
-            <hr class="star-light">
-            <h2 class="font-weight-light mb-0">Web Developer - Full-Stack Developer - Software Engineer</h2>
-        </div>
-    </header>
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">
-                                <p>Color Game</p>
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/color-game.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">
-                                <p>HMS - hospital management system</p>
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/hms.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">
-                                <p>Medica</p>
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/medica.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-4">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">
-                                <p>Newsoasis</p>
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/newsoasis.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-5">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">
-                                <p>Klima</p>
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/klima.png"></a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-6">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white">
-                                <p>Zomatofy</p>
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div><img class="img-fluid" src="assets/img/zomatofy.png"></a>
-                </div>
-            </div>
-        </div>
+  </header>
+
+  <main>
+    <section class=" text-primary mt-6 px-lg-6">
+      <div class="container px-lg-6 pt-4">
+
+        <a class="animate-up-6 d-flex flex-wrap mx-lg-6 flex-row align-items-center alert alert-dark shadow-inset text-secondary"
+          href="keep-plus.html" target="_blank">
+          <div class="icon p-2 shadow-inset border border-light organic-radius">
+            <span class="icon icon-shape-xs shadow-soft border border-light organic-radius">
+              <img src="assets/img/svg/notes.svg" height="20">
+            </span>
+          </div>
+          <h2 class="mx-2 my-0">
+            KEEP+
+            <sup style="vertical-align: text-top;" class="badge badge-pill bg-primary text-danger">New</sup>
+          </h2>
+          <span class="bg-secondary text-primary rounded-circle icon icon-shape-xs shadow-soft p-3 ml-auto">
+            <span aria-hidden="true" class="fas fa-download"></span>
+          </span>
+        </a>
+      </div>
+
     </section>
-    <section id="about" class="bg-primary text-white mb-0">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-white">About me</h2>
-            <hr class="star-light mb-5">
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p class="lead">My name is Mayank Vamja. I've done BE in computer engineering. I've always been fond of programming since I started with C/C++.</p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p class="lead">Since then I've learned different programming languages Java, Javascript, Android, Python, React js, Angular, React native and still adding more.</p>
-                </div>
+
+    <section class="pt-0 pb-5">
+      <div class="container">
+        <div class="profile-card mb-5 ml-auto mr-auto" style="margin-top: 100px; max-width: 600px;">
+          <div class="card bg-primary shadow-soft border-light">
+            <div class="profile-image bg-primary shadow-inset border border-light rounded-circle p-3 ml-3 mt-n5">
+              <img src="./assets/img/profile.png" class="card-img-top rounded-circle" alt="Christopher Avatar">
             </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label><input class="form-control" type="text" id="name" required="" placeholder="Name"><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label><input class="form-control" type="email" id="email" required="" placeholder="Email Address"><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label><input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number"><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div class="control-group">
-                            <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Message" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
-                        </div>
-                        <div id="success"></div>
-                        <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
-                    </form>
-                </div>
+            <div class="card-body">
+              <h3 class="h5 mb-2">Mayank Vamja</h3>
+              <span class="h6 font-weight-normal text-gray mb-3">Full-Stack Developer</span>
+
+              <p class="card-text">React.JS | Node.JS | Express | MongoDB | RESTfull API | Firebase | React Native |
+                Flutter | Angular
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    <footer style="color: rgba(255,255,255,0);">
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <h1 style="text-shadow:9px 8px 3px rgba(0,0,0,0.15);" class="display-1 text-center text-gray mb-5">
+          Portfolio
+        </h1>
         <div class="row">
-            <div class="col-sm-6 col-md-4 footer-contacts">
-                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                    <p> Rajkot, India</p>
-                </div>
-                <div><i class="fa fa-linkedin footer-contacts-icon"></i>
-                    <p class="footer-center-info email text-left"><a href="https://www.linkedin.com/in/mayank-vamja-287aa2138/">mayank-vamja-<strong>287aa2138</strong></a></p>
-                </div>
-                <div><i class="fa fa-envelope footer-contacts-icon"></i>
-                    <p> <a href="mailto:mayankvamja@gmail.com">mayankvamja@gmail.com</a></p>
-                </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card animate-up-3 card-hoverable bg-primary border-light shadow-inset">
+              <div class="card-header p-3">
+                <span style="font-size: 14px;"
+                  class="badge badge-pill bg-primary position-absolute m-2 text-warning shadow-inset">
+                  <span class="fab fa-js"></span>
+                  Vanilla Js
+                </span>
+                <img src="./assets/img/color-game.png" class="card-img-top rounded" alt="Color Game">
+              </div>
+              <div class="card-body pt-0">
+                <h3 class="h5 card-title mb-0"><span class="mr-3"> Guess The Color </span><button
+                    class="btn btn-primary btn-sm btn-pill animate-right-2 text-secondary" data-toggle="modal"
+                    data-target="#modal-1">Know
+                    More</button></h3>
+              </div>
             </div>
-            <div class="col-sm-6 col-md-4 footer-contacts">
-                <div><i class="fa fa-github footer-contacts-icon"></i>
-                    <p class="footer-center-info email text-left"><a href="https://github.com/mayank-vamja">mayank-vamja</a></p>
-                </div>
-                <div><i class="fa fa-medium footer-contacts-icon"></i>
-                    <p>Medium :&nbsp;&nbsp;<a href="https://medium.com/@mayankvamja" target="_blank">@mayankvamja</a></p>
-                </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card animate-up-3 card-hoverable bg-primary border-light shadow-inset">
+              <div class="card-header p-3">
+                <span style="font-size: 14px;"
+                  class="badge badge-pill bg-primary position-absolute m-2 text-info shadow-inset">
+                  <span class="fab fa-php"></span>
+                  <i>php</i>
+                </span>
+                <img src="./assets/img/hms.png" class="card-img-top rounded" alt="Color Game">
+              </div>
+              <div class="card-body pt-0">
+                <h3 class="h5 card-title mb-0"><span class="mr-3"> HMS Portal </span><button
+                    class="btn btn-primary btn-sm btn-pill animate-right-2 text-secondary" data-toggle="modal"
+                    data-target="#modal-2">Know
+                    More</button></h3>
+              </div>
             </div>
-            <div class="col-sm-6 col-md-4 footer-contacts">
-                <div><i class="fa fa-hotel footer-contacts-icon"></i>
-                    <p class="footer-center-info email text-left"><a href="https://zomato-fy.web.app/">Zomato-fy<br></a></p>
-                </div>
-                <div><i class="fa fa-newspaper-o footer-contacts-icon"></i>
-                    <p> <a href="http://newsoasis.herokuapp.com/" target="_blank">Newsoasis</a></p>
-                    <div><i class="fa fa-gamepad footer-contacts-icon"></i>
-                        <p> <a href="game/guess-color/index.html" target="_blank">Guess The Color</a></p>
-                    </div>
-                </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card animate-up-3 card-hoverable bg-primary border-light shadow-inset">
+              <div class="card-header p-3">
+                <span style="font-size: 14px;"
+                  class="badge badge-pill bg-primary position-absolute m-2 text-danger shadow-inset">
+                  <span class="fab fa-angular"></span>
+                  Angular 8
+                </span>
+                <img src="./assets/img/medica.png" class="card-img-top rounded" alt="Color Game">
+              </div>
+              <div class="card-body pt-0">
+                <h3 class="h5 card-title mb-0"><span class="mr-3"> Medica - chatbot </span><button
+                    class="btn btn-primary btn-sm btn-pill animate-right-2 text-secondary" data-toggle="modal"
+                    data-target="#modal-3">Know
+                    More</button></h3>
+              </div>
             </div>
-            <div class="clearfix"></div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card animate-up-3 card-hoverable bg-primary border-light shadow-inset">
+              <div class="card-header p-3">
+                <span style="font-size: 14px;"
+                  class="badge badge-pill bg-primary position-absolute m-2 text-success shadow-inset">
+                  <span class="fab fa-node-js"></span>
+                  Node js | MongoDB | Express
+                </span>
+                <img src="./assets/img/newsoasis.png" class="card-img-top rounded" alt="Color Game">
+              </div>
+              <div class="card-body pt-0">
+                <h3 class="h5 card-title mb-0"><span class="mr-3"> Newsoasis </span><button
+                    class="btn btn-primary btn-sm btn-pill animate-right-2 text-secondary" data-toggle="modal"
+                    data-target="#modal-4">Know
+                    More</button></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card animate-up-3 card-hoverable bg-primary border-light shadow-inset">
+              <div class="card-header p-3">
+                <span style="font-size: 14px;"
+                  class="badge badge-pill bg-primary position-absolute m-2 text-info shadow-inset">
+                  <span class="fab fa-react"></span>
+                  React.Js
+                </span>
+                <img src="./assets/img/zomatofy.png" class="card-img-top rounded" alt="Color Game">
+              </div>
+              <div class="card-body pt-0">
+                <h3 class="h5 card-title mb-0"><span class="mr-3"> Zomato-fy </span><button
+                    class="btn btn-primary btn-sm btn-pill animate-right-2 text-secondary" data-toggle="modal"
+                    data-target="#modal-5">Know
+                    More</button></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="card animate-up-3 card-hoverable bg-primary border-light shadow-inset">
+              <div class="card-header p-3">
+                <span style="font-size: 14px;"
+                  class="badge badge-pill bg-primary position-absolute m-2 text-dark shadow-inset">
+                  <span class="fas fa-mobile"></span>
+                  Flutter
+                </span>
+                <img src="./assets/img/keep-plus/bg.png" class="card-img-top rounded" alt="Color Game">
+              </div>
+              <div class="card-body pt-0">
+                <h3 class="h5 card-title mb-0"><span class="mr-3"> Keep+ </span><a
+                    class="btn btn-primary btn-sm btn-pill animate-right-2 text-secondary" target="_blank"
+                    href="keep-plus.html">Know
+                    More</a></h3>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
-    </footer>
-    <div class="copyright py-4 text-center text-white" style="color: rgba(255,255,255,0);">
-        <div class="container"><small>Copyright © MV Softs 2020</small></div>
-    </div>
-    <div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">guess the color</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/color-game.png">
-                                <p class="mb-5">A RGB color guessing game where you have to choose a color from options based on levels (easy, medium, hard).</p>
-                                <div class="card">
-                                    <div class="card-body" style="padding: 10px;">
-                                        <h4 class="card-title">Technologies</h4><button class="btn btn-primary" type="button" style="margin: 2px;">HTML</button><button class="btn btn-primary" type="button" style="margin: 2px;">CSS</button><button class="btn btn-primary" type="button"
-                                            style="margin: 2px;">JAVASCRIPT</button>
-                                        <p><a href="game/guess-color/index.html" target="_blank">Click here to play the game</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      </div>
+    </section>
+
+
+    <section class="section section-lg pt-0" id="about">
+      <div class="container">
+        <h1 style="text-shadow:9px 8px 3px rgba(0,0,0,0.15);" class="display-1 text-center text-gray mb-5">
+          About
+        </h1>
+        <div class="row">
+          <div class="col">
+            <div class="card bg-primary shadow-soft border-light p-4">
+              <div class="row" style="justify-content: center;">
+                <div class="col-12 col-lg-4 px-md-0 mb-2 mb-lg-0">
+                  <div class="card-body text-center bg-primary py-5">
+                    <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                      <span class="fas fa-medal"></span>
                     </div>
+
+                    <!-- Heading -->
+                    <h2 class="h4 mr-2">
+                      Introduction
+                    </h2>
+                    <!-- Text -->
+                    <p class="mb-0">My name is Mayank Vamja. I've done BE in computer engineering. I've always been fond
+                      of programming since
+                      I started with C/C++.</p>
+                  </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">HMS - Hospital management System</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/hms.png">
-                                <p class="mb-5">HMS is hospital management system project that includes appointment management system, medical reports management, prescription digitalization, medical data analysis based on patient medical history. It provides new way
-                                    to use technologies in hospitals.</p>
-                                <div class="card">
-                                    <div class="card-body" style="padding: 10px;">
-                                        <h4 class="card-title">Technologies</h4><button class="btn btn-primary" type="button" style="margin: 2px;">PHP</button><button class="btn btn-primary" type="button" style="margin: 2px;">CSS</button><button class="btn btn-primary" type="button"
-                                            style="margin: 2px;">JAVASCRIPT</button><button class="btn btn-primary" type="button" style="margin: 2px;">HTML</button>
-                                        <p>
-                                            <a href="./assets/others/hms.pdf" target="_blank" download>Click here to view Project Report</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-12 col-lg-4 px-md-0 mb-2 mb-lg-0">
+                  <div class="card-body text-center bg-primary py-5">
+                    <div class="icon icon-shape shadow-inset border-light rounded-circle mb-3">
+                      <span class="far fa-eye"></span>
                     </div>
+                    <!-- Heading -->
+                    <h2 class="h4 mr-2">
+                      Vision
+                    </h2>
+                    <!-- Text -->
+                    <p class="mb-0">Since then I've learned different programming languages Java, Javascript, Android,
+                      Python, React js,
+                      Angular, React native and still adding more.</p>
+                  </div>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
+
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h1 style="text-shadow:9px 8px 3px rgba(0,0,0,0.15);" class="display-1 text-center text-gray mb-5">
+          Contact
+        </h1>
+        <form id="contact-us-form" class="col-12 col-md-8 mx-auto" method="POST">
+          <!-- Form -->
+          <div class="form-group">
+            <label for="nameInputIcon2">Your Name</label>
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><span class="far fa-user-circle"></span></span>
+              </div>
+              <input required name="name" class="form-control" id="nameInput" placeholder="e.g. Bonnie Green"
+                type="text" aria-label="contact name input">
+            </div>
+            <p id="nameError" class="text-danger m-0" style="display: none;">Please provide name.</p>
+          </div>
+          <!-- Form -->
+          <div class="form-group">
+            <label for="emailInputIcon2">Your Email</label>
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><span class="far fa-envelope"></span></span>
+              </div>
+              <input required name="email" class="form-control" id="emailInput" placeholder="example@company.com"
+                type="email" aria-label="contact email input">
+            </div>
+            <p id="emailError" class="text-danger m-0" style="display: none;">Please provide valid email.</p>
+          </div>
+          <!-- Form -->
+          <div class="form-group">
+            <label for="exampleFormControlTextarea2">Message</label>
+            <textarea name="message" class="form-control" placeholder="Enter your message..." id="messageInput"
+              rows="4"></textarea>
+            <p id="messageError" class="text-danger m-0" style="display: none;">Please provide message.</p>
+          </div>
+
+          <p class="text-center"><button type="submit" class="btn btn-lg btn-secondary text-primary">Send
+              message</button></p>
+          <!-- End of Form -->
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade show" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="modal-1" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="h6 modal-title mb-0 text-info" id="modal-title-1">Guess The Color</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/color-game.png" class="card-img-top rounded mb-3" alt="Designer desk">
+          <p class="text-center"><a href="./game/color-guess/index.html" type="button"
+              class="btn animate-right-3 btn-pill btn-secondary text-primary" target="_blank">Play Game Now <span
+                class="fas fa-arrow-right"></span> </a></p>
+          <p class="mb-1">A RGB color guessing game where you have to choose a color from options based on levels (easy,
+            medium, hard).</p>
+          <div class="alert alert-secondary shadow-inset m-0 text-center" role="alert">
+            <span class="badge badge-lg badge-success text-uppercase">HTML</span>
+            <span class="badge badge-lg badge-secondary text-uppercase">CSS</span>
+            <span class="badge badge-lg badge-success text-uppercase">Javascript</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-pill btn-primary text-secondary text-danger ml-auto"
+            data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">MEDICA</h2>
-                                <hr class="star-dark mb-5">
-                                <video class="mb-5" style="width: 100%;" controls>
-                                    <source src="./assets/videos/Medica.webm" type="video/webm">
-                                    Your browser does not support the video.
-                                </video>
-                                <p class="mb-5">Medica is medical chatbot used for checking medical conditions based on symptoms.</p>
-                                <div class="card">
-                                    <div class="card-body" style="padding: 10px;">
-                                        <h4 class="card-title">Technologies</h4><button class="btn btn-primary" type="button" style="margin: 2px;">ANGULAR 9</button><button class="btn btn-primary" type="button" style="margin: 2px;">SASS / SCSS</button>
-                                        <p></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  </div>
+
+  <div class="modal fade show" id="modal-2" tabindex="-1" role="dialog" aria-labelledby="modal-2" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="h6 modal-title mb-0 text-info" id="modal-title-1">HMS Portal</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/hms/Screenshot (35).png" class="card-img-top rounded mb-3" alt="Designer desk">
+          <p class="mb-1">
+            HMS is hospital management system portal. This project includes appointment management system, medical
+            reports management, prescription digitalization, medical data analysis based on patient medical history. It
+            provides new way to use technologies in hospitals.
+          </p>
+          <embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=https://mayank-vamja.github.io/assets/others/hms.pdf"
+            style="width: 100%; border-radius: 16px; background-color: #fff; " height="375">
+          <a href="assets/others/hms.pdf" target="_blank" type="button"
+            class="btn btn-sm btn-pill btn-primary bg-secondary text-primary my-3 text-center">Pdf download</a>
+          <div class="alert alert-secondary shadow-inset m-0 text-center" role="alert">
+            <span class="badge badge-lg badge-success text-uppercase">HTML</span>
+            <span class="badge badge-lg badge-danger text-uppercase">php</span>
+            <span class="badge badge-lg badge-secondary text-uppercase">CSS</span>
+            <span class="badge badge-lg badge-success text-uppercase">Javascript</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/mayank-vamja/hms-gtu-pmms" type="button"
+            class="btn btn-sm btn-pill btn-primary text-secondary" target="_blank">View on Github</a>
+          <button type="button" class="btn btn-pill btn-primary text-secondary text-danger ml-auto"
+            data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade show" id="modal-3" tabindex="-1" role="dialog" aria-labelledby="modal-3" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="h6 modal-title mb-0 text-info" id="modal-title-1">Medica</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <video class="mb-2" style="width: 100%;" controls="">
+            <source src="./assets/videos/Medica.webm" type="video/webm">
+            Your browser does not support the video.
+          </video>
+          <p class="mb-1">
+            Medica is medical chatbot used for checking medical conditions based on symptoms.
+            This project is PWA (progessive web application) developed in angular 8.
+          </p>
+          <div class="alert alert-secondary shadow-inset m-0 text-center" role="alert">
+            <span class="badge badge-lg badge-secondary text-uppercase">Angular 8</span>
+            <span class="badge badge-lg badge-success text-uppercase">HTML</span>
+            <span class="badge badge-lg badge-danger text-uppercase">SASS</span>
+            <span class="badge badge-lg badge-success text-uppercase">Typescript</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/mayank-vamja/medica" type="button"
+            class="btn btn-sm btn-pill btn-primary text-secondary" target="_blank">View on Github</a>
+          <button type="button" class="btn btn-pill btn-primary text-secondary text-danger ml-auto"
+            data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade show" id="modal-4" tabindex="-1" role="dialog" aria-labelledby="modal-4" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="h6 modal-title mb-0 text-info" id="modal-title-1">Newsoasis</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/newsoasis/Screenshot.png" class="card-img-top rounded mb-3" alt="Designer desk">
+          <p class="text-center"><a href="https://newsoasis.herokuapp.com" type="button"
+              class="btn animate-right-3 btn-pill btn-secondary text-primary" target="_blank">Visit Now <span
+                class="fas fa-arrow-right"></span> </a></p>
+          <p class="mb-1">NEWSOASIS is website to read news articles from many of trusted sources over worldwide.
+            Reading news as stories, trending topics as well as trending news from last 24 hourse kind of features are
+            also available.</p>
+          <div class="alert alert-secondary shadow-inset m-0 text-center" role="alert">
+            <span class="badge badge-lg badge-success">HTML</span>
+            <span class="badge badge-lg badge-secondary">CSS</span>
+            <span class="badge badge-lg badge-success">NODE.JS</span>
+            <span class="badge badge-lg badge-success">EJS</span>
+            <span class="badge badge-lg badge-success">MongoDB</span>
+            <span class="badge badge-lg badge-success">NewsAPI</span>
+            <span class="badge badge-lg badge-success">Google-Trends</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-pill btn-primary text-secondary text-danger ml-auto"
+            data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade show" id="modal-5" tabindex="-1" role="dialog" aria-labelledby="modal-5" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="h6 modal-title mb-0 text-info" id="modal-title-1">Zomato-fy</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/zomato-fy/Screenshot.jpeg" class="card-img-top rounded mb-3" alt="Designer desk">
+          <!-- <img src="./assets/img/zomato-fy/Screenshot-2.png" class="card-img-top rounded mb-3" alt="Designer desk"> -->
+          <p class="text-center"><a href="https://zomato-fy.web.app" type="button"
+              class="btn animate-right-3 btn-pill btn-secondary text-primary" target="_blank">Visit Now <span
+                class="fas fa-arrow-right"></span> </a></p>
+          <p class="mb-1">Zomatofy is platform to see top rated restaurants and search restaurants from all over places
+            and get verified reviews with photos. </p>
+          <div class="alert alert-secondary shadow-inset m-0 text-center" role="alert">
+            <span class="badge badge-lg badge-success">HTML</span>
+            <span class="badge badge-lg badge-secondary">CSS</span>
+            <span class="badge badge-lg badge-success">React.JS</span>
+            <span class="badge badge-lg badge-success">Zomato API</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-pill btn-primary text-secondary text-danger ml-auto"
+            data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alerts" class="col-12 col-md-10 fixed-bottom"></div>
+
+  <footer class="d-flex pb-5 pt-6 border-top border-light bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Info</h4>
+          <div class="alert shadow-inset">
+            <div class="alert-inner--text d-flex flex-row align-self-center mb-3">
+              <span class="icon text-success"><span class="fas fa-map-marker"></span></span>
+              <h2 class="text-success m-0 ml-3">India</h2>
+            </div>
+            <a class="alert-inner--text d-flex flex-row align-self-center" href="mailto:mayankvamja@gmail.com">
+              <span class="icon text-info icon-xs"><span class="fas fa-envelope"></span></span>
+              <span class="text-info m-0 ml-3">mayankvamja@gmail.com</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+          <h4>Others</h4>
+          <ul class="footer-links list-unstyled mt-2">
+            <li class="mb-1"><a class="p-2" target="_blank" href="https://zomato-fy.web.app/">Zomato-fy (Find
+                restaurants)</a></li>
+            <li class="mb-1"><a class="p-2" target="_blank" href="http://newsoasis.herokuapp.com/">Newsoasis (Trending
+                News)</a></li>
+            <li class="mb-1"><a class="p-2" target="_blank" href="game/guess-color/index.html">Colour Guess (Game)</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+          <h5></h5>
+          <ul class="footer-links list-unstyled mt-2">
+            <li class="mb-3">
+              <a href="https://github.com/mayank-vamja" target="_blank" class="btn btn-pill btn-primary"
+                aria-label="github social link" data-toggle="tooltip" data-placement="top" title=""
+                data-original-title="Open source projects">
+                <span aria-hidden="true" class="fab fa-github"></span>
+                <span>Github</span>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://mayankvamja.medium.com/" target="_blank" class="btn btn-pill btn-primary"
+                aria-label="github social link" data-toggle="tooltip" data-placement="top" title=""
+                data-original-title="Follow on medium">
+                <span aria-hidden="true" class="fab fa-medium"></span>
+                <span>Medium: @mayankvamja</span>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://www.linkedin.com/in/mayank-vamja-287aa2138/" target="_blank"
+                class="btn btn-pill btn-primary" aria-label="github social link" data-toggle="tooltip"
+                data-placement="top" title="" data-original-title="Follow on medium">
+                <span aria-hidden="true" class="fab fa-linkedin"></span>
+                <span>mayank-vamja-287aa2138</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-5">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex text-center justify-content-center align-items-center" role="contentinfo">
+            <p class="font-weight-normal font-small mb-0">Copyright © MVSofts
+              <span class="current-year">2020</span>. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Core -->
+  <script src="./vendor/jquery/dist/jquery.min.js"></script>
+  <script src="./vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./vendor/headroom.js/dist/headroom.min.js"></script>
+  <script src="./assets/js/neumorphism.js"></script>
+
+  <script>
+    document.cookie = 'SameSite=None; Secure';
+    $(document).ready(function () {
+      $('#contact-us-form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+          method: "POST",
+          url: 'http://newsoasis.herokuapp.com/api/portfolio/contact',
+          data: $(this).serialize(),
+          success: function (data) {
+            //callback methods go right here
+            console.log(data);
+            document.querySelector("#alerts").innerHTML = `
+                <div class="alert alert-success alert-dismissible shadow-soft fade show" role="alert">
+                  <span class="alert-inner--icon"><span class="far fa-thumbs-up"></span></span>
+                  <span class="alert-inner--text"><strong>Well done!</strong> Your message has been recieved.</span>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
                 </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">NEWSOASIS</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/newsoasis.png">
-                                <p class="mb-5">NEWSOASIS is website to read news articles from many of trusted sources over worldwide. Reading news as stories, trending topics as well as trending news from last 24 hourse kind of features are also available.</p>
-                                <div
-                                    class="card">
-                                    <div class="card-body" style="padding: 10px;">
-                                        <h4 class="card-title">Technologies</h4><button class="btn btn-primary" type="button" style="margin: 2px;">HTML</button><button class="btn btn-primary" type="button" style="margin: 2px;">CSS</button><button class="btn btn-primary" type="button"
-                                            style="margin: 2px;">NODE JS</button><button class="btn btn-primary" type="button" style="margin: 2px;">EJS</button><button class="btn btn-primary" type="button" style="margin: 2px;">MONGO DB</button><button class="btn btn-primary"
-                                            type="button" style="margin: 2px;">NewsApi</button><button class="btn btn-primary" type="button" style="margin: 2px;">Google-Trends</button>
-                                        <p><a href="http://newsaosis.herokuapp.com" target="_blank">Click here to go to website: http://newsaosis.herokuapp.com</a></p>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+            `;
+            setTimeout(() => document.querySelector("#alerts").innerHTML = '', 3000);
+            document.querySelector('#contact-us-form').reset();
+          },
+          error: function (err) {
+            document.querySelector("#alerts").innerHTML = `
+                <div class="alert alert-danger alert-dismissible shadow-soft fade show" role="alert">
+                  <span class="alert-inner--icon"><span class="fas fa-fire"></span></span>
+                  <span class="alert-inner--text"><strong>Oh snap!</strong> Unexpected error occured. Please try again.</span>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                  </button>
                 </div>
-            </div>
-            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-        </div>
-    </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">KLIMA</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/klima.png">
-                                <p class="mb-5">Klima is a weather application to give current weather data and five day - 3 hourly forecast.</p>
-                                <div class="card">
-                                    <div class="card-body" style="padding: 10px;">
-                                        <h4 class="card-title">Technologies</h4><button class="btn btn-primary" type="button" style="margin: 2px;">REACT NATIVE</button>
-                                        <p><a href="#">Click here to download the application</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
-                <div class="modal-body">
-                    <div class="container text-center">
-                        <div class="row">
-                            <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Zomato-fy</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/zomatofy.png">
-                                <p class="mb-5">Zomatofy is platform to see top rated restaurants and search restaurants&nbsp; from all over places and get verified reviews with photos.&nbsp;</p>
-                                <div class="card">
-                                    <div class="card-body" style="padding: 10px;">
-                                        <h4 class="card-title">Technologies</h4><button class="btn btn-primary" type="button" style="margin: 2px;">REACT JS</button>
-                                        <p><a href="https://zomato-fy.web.app" target="_blank">Click here to use zomato-fy.web.app</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" data-dismiss="modal"><i class="fa fa-close"></i>&nbsp;Close</a></div>
-            </div>
-        </div>
-    </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/freelancer.js"></script>
+            `;
+            setTimeout(() => document.querySelector("#alerts").innerHTML = '', 3000);
+          }
+        });
+      });
+      $(".modal").modal("hide");
+
+    });
+    function navbarAction() {
+      $('#navbar_global').collapse('hide');
+    }
+  </script>
 </body>
 
 </html>
