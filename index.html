@@ -41,6 +41,16 @@
       top: 80px !important;
       /* height: min-content !important; */
     }
+
+    .medium-widget-article__row {
+      box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF !important;
+      border-radius: 0.5rem;
+      margin-bottom: 10px;
+    }
+
+    .medium-widget-article__title:hover {
+      color: #7444DF !important;
+    }
   </style>
 </head>
 
@@ -78,6 +88,10 @@
             <li class="nav-item mx-0 mx-lg-1" role="presentation">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" data-toggle="scroll" href="#about"
                 onclick="navbarAction()">About</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" data-toggle="scroll" href="#blogs"
+                onclick="navbarAction()">Blogs</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1" role="presentation">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" data-toggle="scroll" href="#contact"
@@ -354,11 +368,27 @@
       </div>
     </section>
 
+    <section class="pt-0 container px-lg-6" id="blogs">
+      <div class="container px-lg-6">
+        <h1 style="text-shadow:9px 8px 3px rgba(0,0,0,0.15);" class="text-gray mb-3">
+          Recent Blogs
+        </h1>
+        <div class="medium-blogs"></div>
+        <a href="https://mayankvamja.medium.com/" target="_blank" class="btn btn-pill btn-primary"
+          aria-label="med social link" data-toggle="tooltip" data-placement="top" title=""
+          data-original-title="Follow on medium">
+          <span aria-hidden="true" class="fab fa-medium"></span>
+          <span>See more</span>
+        </a>
+      </div>
+    </section>
+
     <section class="section" id="contact">
       <div class="container">
-        <h1 style="text-shadow:9px 8px 3px rgba(0,0,0,0.15);" class="display-1 text-center text-gray mb-5">
+        <h1 style="text-shadow:9px 8px 3px rgba(0,0,0,0.15);" class="display-1 text-center text-gray">
           Contact
         </h1>
+        <p class="text-center text-info mb-5">Give your feedback below</p>
         <form id="contact-us-form" class="col-12 col-md-8 mx-auto" method="POST">
           <!-- Form -->
           <div class="form-group">
@@ -612,10 +642,13 @@ viewer?embedded=true&url=https://mayank-vamja.github.io/assets/others/hms.pdf"
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <h4>Info</h4>
+          <h5><u>Info</u></h5>
           <div class="alert shadow-inset">
-            <div class="alert-inner--text d-flex flex-row align-self-center mb-3">
-              <span class="icon text-success"><span class="fas fa-map-marker"></span></span>
+            <div class="alert-inner--text d-flex flex-row align-self-center mb-3" style="background: -webkit-linear-gradient(orange,orange, white, green,green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            ">
+              <span class="icon text- "><span class="fas fa-map-marker"></span></span>
               <h2 class="text-success m-0 ml-3">India</h2>
             </div>
             <a class="alert-inner--text d-flex flex-row align-self-center" href="mailto:mayankvamja@gmail.com">
@@ -625,7 +658,7 @@ viewer?embedded=true&url=https://mayank-vamja.github.io/assets/others/hms.pdf"
           </div>
         </div>
         <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-          <h4>Others</h4>
+          <h5><u>Other links</u></h5>
           <ul class="footer-links list-unstyled mt-2">
             <li class="mb-1"><a class="p-2" target="_blank" href="https://zomato-fy.web.app/">Zomato-fy (Find
                 restaurants)</a></li>
@@ -655,11 +688,11 @@ viewer?embedded=true&url=https://mayank-vamja.github.io/assets/others/hms.pdf"
               </a>
             </li>
             <li class="mb-3">
-              <a href="https://www.linkedin.com/in/mayank-vamja-287aa2138/" target="_blank"
+              <a href="https://www.linkedin.com/in/mayank-gajjar-287aa2138/" target="_blank"
                 class="btn btn-pill btn-primary" aria-label="github social link" data-toggle="tooltip"
-                data-placement="top" title="" data-original-title="Follow on medium">
+                data-placement="top" title="" data-original-title="Contact on linkedin">
                 <span aria-hidden="true" class="fab fa-linkedin"></span>
-                <span>mayank-vamja-287aa2138</span>
+                <span>mayank-gajjar-287aa2138</span>
               </a>
             </li>
           </ul>
@@ -731,6 +764,9 @@ viewer?embedded=true&url=https://mayank-vamja.github.io/assets/others/hms.pdf"
       $('#navbar_global').collapse('hide');
     }
   </script>
+  <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+  <script>MediumWidget.Init({ renderTo: '.medium-blogs', params: { "resource": "https://medium.com/@mayankvamja", "postsPerLine": 1, "limit": 4, "picture": "big", "fields": ["description", "author", "publishAt"], "ratio": "landscape" } })</script>
+
 </body>
 
 </html>

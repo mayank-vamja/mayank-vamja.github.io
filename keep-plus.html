@@ -232,6 +232,15 @@
       }
 
     }
+
+    .medium-widget-article__row:hover {
+      box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #FFFFFF;
+      border-radius: 0.55rem;
+    }
+
+    .medium-widget-article__title:hover {
+      color: #7444df;
+    }
   </style>
 </head>
 
@@ -277,6 +286,25 @@
             </li>
             <li class="nav-item mx-0 mx-lg-1" role="presentation">
               <a class="nav-link py-3 px-0 px-lg-3 rounded" onclick="navbarAction('#screenshots')">Screenshots</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./index.html#contact">Feedback</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1" role="presentation">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./index.html#about">About me</a>
+            </li>
+            <li class="nav-item dropdown mega-dropdown hide">
+              <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+                <span class="nav-link-inner-text">Blogs</span>
+                <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
+              </a>
+              <div class="dropdown-menu px-lg-6" style="width: 100%; left: 0;">
+                <div class="col-auto px-lg-6" data-dropdown-content="">
+                  <div class="list-group list-group-flush">
+                    <div id="medium-widget"></div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -325,6 +353,17 @@
                 Windows (x64 - exe)
               </a>
 
+              <h6>Click below for browser extensions</h6>
+              <a href="https://microsoftedge.microsoft.com/addons/detail/keep/dhgncfedpgifgoagdjlgfpbhfhkaieck"
+                target="_blank" class="btn btn-pill btn-sm btn-primary mb-3 mr-3 text-gray" type="button">
+                <span class="mr-1"><span class="fab fa-edge"></span></span>
+                Edge
+              </a>
+              <a href="https://addons.mozilla.org/en-US/firefox/addon/keep/" target="_blank"
+                class="btn btn-pill btn-sm btn-primary mb-3 mr-3 text-warning" type="button">
+                <span class="mr-1"><span class="fab fa-firefox"></span></span>
+                Firefox
+              </a>
               <!-- <a class="btn btn-pill btn-sm btn-primary mb-3 mr-3 text-gray" type="button">
                 <span class="mr-1"><span class="fab fa-apple"></span></span>
                 macOs (row - zip)
@@ -568,6 +607,13 @@
     <section class="section text-primary mt-0 px-lg-6">
       <div class="container px-lg-6 pt-4">
 
+        <a class="animate-up-6 d-flex flex-wrap  mt-4 mx-lg-6 mb-0 flex-row align-items-center alert alert-dark shadow-inset text-secondary"
+          href="./index.html#contact">
+          <h4 class="mx-2 my-0">
+            Leave your feedback here
+          </h4>
+        </a>
+
         <div class="shadow-inset rounded mt-4 pb-1 mx-lg-6">
           <a class="animate-up-6 d-flex flex-wrap mb-0 flex-row align-items-center alert alert-dark shadow-inset text-secondary"
             href="klima.html" target="_blank">
@@ -596,20 +642,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <h4>Info</h4>
-          <div class="alert shadow-inset">
-            <div class="alert-inner--text d-flex flex-row align-self-center mb-3">
-              <span class="icon text-success"><span class="fas fa-map-marker"></span></span>
-              <h2 class="text-success m-0 ml-3">India</h2>
-            </div>
-            <a class="alert-inner--text d-flex flex-row align-self-center" href="mailto:mayankvamja@gmail.com">
-              <span class="icon text-info icon-xs"><span class="fas fa-envelope"></span></span>
-              <span class="text-info m-0 ml-3">mayankvamja@gmail.com</span>
+          <div class="shadow-inset p-3 rounded mx-5 mb-3">
+            <a class="d-flex flex-row align-items-center" href="./index.html">
+              <span class="icon text-info icon-xs"><span class="fas fa-info"></span></span>
+              <span class="text-info m-0 ml-3">Know more <br>about Developer</span>
             </a>
           </div>
         </div>
         <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-          <h4>Others</h4>
+          <h5><u>Other links</u></h5>
           <ul class="footer-links list-unstyled mt-2">
             <li class="mb-1"><a class="p-2" target="_blank" href="https://zomato-fy.web.app/">Zomato-fy (Find
                 restaurants)</a></li>
@@ -639,11 +680,11 @@
               </a>
             </li>
             <li class="mb-3">
-              <a href="https://www.linkedin.com/in/mayank-vamja-287aa2138/" target="_blank"
+              <a href="https://www.linkedin.com/in/mayank-gajjar-287aa2138/" target="_blank"
                 class="btn btn-pill btn-primary" aria-label="github social link" data-toggle="tooltip"
-                data-placement="top" title="" data-original-title="Follow on medium">
+                data-placement="top" title="" data-original-title="Contact on linkedin">
                 <span aria-hidden="true" class="fab fa-linkedin"></span>
-                <span>mayank-vamja-287aa2138</span>
+                <span>mayank-gajjar-287aa2138</span>
               </a>
             </li>
           </ul>
@@ -739,6 +780,8 @@
     }
 
   </script>
+  <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+  <script>MediumWidget.Init({ renderTo: '#medium-widget', params: { "resource": "https://medium.com/@mayankvamja", "postsPerLine": 1, "limit": 3, "picture": "small", "fields": ["description", "author", "publishAt"], "ratio": "landscape" } })</script>
 </body>
 
 </html>
